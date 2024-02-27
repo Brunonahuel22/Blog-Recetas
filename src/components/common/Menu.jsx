@@ -1,22 +1,28 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
 const Menu = () => {
     return (
-        <>
-        <Navbar bg="dark" data-bs-theme="dark" className='p-3'>
-        <Container>
-          <Navbar.Brand href="#home">Logo pagina</Navbar.Brand>
+        <div>
+        <Navbar expand="lg" bg="dark" data-bs-theme="dark">
+      <Container>
+        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link href="#home">Inicio</Nav.Link>
-            <Nav.Link href="#features">Administrar</Nav.Link>
-            <Nav.Link href="#pricing">Registro</Nav.Link>
-            <Nav.Link href="#pricing">Login</Nav.Link>
+            <Nav.Link href="#link">Administrar</Nav.Link>
+            <Nav.Link href="#link">Registro</Nav.Link>
+            <Nav.Link href="#link">Login</Nav.Link>
+           
+           
           </Nav>
-        </Container>
-      </Navbar>
-        </>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+        </div>
     );
 };
 
